@@ -131,32 +131,55 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="work">
 			<div class="container">
 				<div class="head text-center work-head">
-					<h3><span> </span> How We Work</h3>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+					<h3><span> </span>How our platform works</h3>
+					<p>It's easy as a pie. Register and start discovering how we can help you getting better.</p>
 				</div>
 				<!---- start-work-grids----->
 				<div class="work-grids">
 					<div class="col-md-4 work-grid">
 						<span class="col-md-5 w-icon"> <i class="fa fa-search"> </i></span>
 						<div class="col-md-7 work-info">
-							<h4>Research</h4>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+							<h4>Register</h4>
+							<p>With creating a new account you get access to our platform. It's also available as an Android app.</p>
 						</div>
 					</div>
 					<div class="col-md-4 work-grid center-work-grid">
 						<span class="col-md-5 w-icon"> <i class="fa fa-cogs"> </i></span>
 						<div class="col-md-7 work-info">
-							<h4>Design</h4>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+							<h4>Collect your values</h4>
+							<p>With our ISO-BUS we can connect your farm devices and collect the data they are producing.</p>
 						</div>
 					</div>
 					<div class="col-md-4 work-grid">
 						<span class="col-md-5 w-icon"><i class="fa fa-code"> </i> </span>
 						<div class="col-md-7 work-info">
-							<h4>Develop</h4>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+							<h4>Analyse and Predecit</h4>
+							<p>With our predective analysis engine we will help you to bring out the best of your farm. Our generated dashboards will provide you an overview of what you did great and ho we can improve your performance.</p>
 						</div>
 					</div>
+					<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<p>@Helmut Steiner, 2014 - 2015</a></p>
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
 					<div class="clearfix"> </div>
 					<div class="work-map">
 						<span> </span>
@@ -167,159 +190,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!---- //End-work---->
 		<!----start-portfolio----->
-		<div id="port" class="portfolio portfolio-box">
-				<div class="head text-center">
-					<h3><span> </span> Portofolio</h3>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-				</div>
-				<!----start-portfolio---->
-               <div id="port" class="portfolio-main">
-	        	<!---- start-portfolio-script----->
-					<script type="text/javascript" src="web/js/jquery.mixitup.min.js"></script>
-					<script type="text/javascript">
-						$(function () {
-							var filterList = {
-								init: function () {
-								
-									// MixItUp plugin
-									// http://mixitup.io
-									$('#portfoliolist').mixitup({
-										targetSelector: '.portfolio',
-										filterSelector: '.filter',
-										effects: ['fade'],
-										easing: 'snap',
-										// call the hover effect
-										onMixEnd: filterList.hoverEffect()
-									});				
-								
-								},
-								hoverEffect: function () {
-									// Simple parallax effect
-									$('#portfoliolist .portfolio').hover(
-										function () {
-											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-										},
-										function () {
-											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-										}		
-									);				
-								
-								}
-					
-							};
-							// Run the show!
-							filterList.init();
-						});	
-					</script>
-					<!----//End-portfolio-script----->
-					<ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
-						<li><span class="filter" data-filter="app">Web</span></li>
-						<li><span class="filter" data-filter="card">Print</span></li>
-					</ul>
-					<div id="portfoliolist">
-					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">	
-							<div class="port-grid">
-								<div class="port-grid-text">
-									<p>//Lorem Ipsum</p>
-									<label class="arrow-icon1"> </label>
-								</div>
-								<div class="port-grid-pic block last">
-									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="web/images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt=""/></h2>
-								  	</div></a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-		                </div>
-					</div>				
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<div class="port-grid">
-								<div class="port-grid-text port-grid-text-c">
-									<p>//Lorem Ipsum</p>
-									<label class="arrow-icon1 arrow-icon1-l"> </label>
-								</div>
-								<div class="port-grid-pic block last">
-									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="web/images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt=""/></h2>
-								  	</div></a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-		                </div>
-					</div>		
-					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<div class="port-grid">
-								<div class="port-grid-text port-grid-text-c">
-									<p>//Lorem Ipsum</p>
-									<label class="arrow-icon1 arrow-icon1-l"> </label>
-								</div>
-								<div class="port-grid-pic block last">
-									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="web/images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt=""/></h2>
-								  	</div></a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-		                </div>
-					</div>				
-					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<div class="port-grid">
-								<div class="port-grid-pic block last">
-									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="web/images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt=""/></h2>
-								  	</div></a>
-								</div>
-								<div class="port-grid-text port-grid-text-c">
-									<p>//Lorem Ipsum</p>
-									<label class="arrow-icon1 arrow-icon1-r"> </label>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-		                </div>
-					</div>	
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<div class="port-grid">
-								<div class="port-grid-pic block last">
-									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="web/images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt=""/></h2>
-								  	</div></a>
-								</div>
-								<div class="port-grid-text port-grid-text-c">
-									<p>//Lorem Ipsum</p>
-									<label class="arrow-icon1  arrow-icon1-r"> </label>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-		                </div>
-					</div>			
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
-							<div class="port-grid">
-								<div class="port-grid-pic block last">
-									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-								     <img src="web/images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="web/images/plus.png" alt=""/></h2>
-								  	</div></a>
-								</div>
-								<div class="port-grid-text port-grid-text-c">
-									<p>//Lorem Ipsum</p>
-									<label class="arrow-icon1  arrow-icon1-r"> </label>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-		                </div>
-					</div>	
-					<div class="clearfix"> </div>	
-				</div>
-		</div>
-		</div>
+		
 		<div class="clearfix"> </div>
 		<!----//End-portfolio----->
 		<!----start-blog---->
