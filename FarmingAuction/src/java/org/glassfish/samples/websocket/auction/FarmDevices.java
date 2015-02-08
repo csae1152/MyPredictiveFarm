@@ -58,17 +58,28 @@ public class FarmDevices {
      * Current price of the item.
      */
     private double price;
+    
+    /**
+     * 
+     */
+    private final String owner;
 
     /*
      * Timeout which is applied for one bid.
      */
     private final int bidTimeoutS;
 
-    public FarmDevices(String name, String description, double price, int bidTimeoutS) {
+    public FarmDevices(String name, String description, double price, String owner, 
+            int bidTimeoutS) {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.owner = owner;
         this.bidTimeoutS = bidTimeoutS;
+    }
+
+    FarmDevices(String traction_engine, String nice_Swatch_watches_hand_made, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
