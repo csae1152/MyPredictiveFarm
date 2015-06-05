@@ -3,7 +3,7 @@ MyPredectiveTools
 
 Tool suite for the agricultural industry.
 
-Based on Vert.x platform and Neo4J.
+Based on Vert.x with Java on the Backend and HTML5/jQuery for the frontend.
 
 Our tool will also include a predective engine and a bidding platform for all kind of devices.
 
