@@ -12,7 +12,7 @@ body a{
 }
 /*----start-header----*/
 .header{
-	background:url(../images/headerBackground.jpg) no-repeat 0px 0px;
+	background:url(../images/bg-picture.jpg) no-repeat 0px 0px;
 	background-size:100% 100%;
 	min-height:700px;
 }
