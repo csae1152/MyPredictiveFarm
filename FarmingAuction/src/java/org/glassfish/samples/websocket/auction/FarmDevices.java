@@ -63,6 +63,9 @@ public class FarmDevices {
      * 
      */
     private final String owner;
+    
+    @Transient
+    private final InetAddress address;
 
     /*
      * Timeout which is applied for one bid.
