@@ -11,4 +11,8 @@ Visit our Blog: http://mypredectivefarm.blogspot.co.at/
 
 For more information please visit: http://jbossvertx-easyfarming.rhcloud.com/
 
+Feature list:
+
+1. Computer aided diagnosis - Upload an image from your animal and we will analyze maybe upcoming deseas.
+
 
