@@ -61,52 +61,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        		}
 	    		});
 			});
+
+			var lock = null;
+			$(document).ready(function() {
+			   lock = new Auth0Lock('R3Xvq6jPmaI6b712OH3D0IERdtaveKXE', 'mypredectivefarm.eu.auth0.com');
+			});
+
+			var userProfile;
+
+			$('.btn-login').click(function(e) {
+			  e.preventDefault();
+			  lock.show(function(err, profile, token) {
+			    if (err) {
+			      // Error callback
+			      alert('There was an error');
+			    } else {
+			      // Success callback
+
+			      // Save the JWT token.
+			      localStorage.setItem('userToken', token);
+
+			      // Save the profile
+			      userProfile = profile;
+			    }
+			  });
+			});
+
+			$.ajaxSetup({
+				  'beforeSend': function(xhr) {
+				    if (localStorage.getItem('userToken')) {
+				      xhr.setRequestHeader('Authorization',
+				            'Bearer ' + localStorage.getItem('userToken'));
+				    }
+				  }
+				});
+
+			//$('.nick').text(userProfile.nickname);
+
+			//localStorage.removeItem('token');
+			//userProfile = null;
+			//window.location.href = "/";
 		</script>
 		<!----//End-top-nav-script---->
 		
-		<script type="text/javascript">
-
-		var lock = null;
-		$(document).ready(function() {
-		   lock = new Auth0Lock('R3Xvq6jPmaI6b712OH3D0IERdtaveKXE', 'mypredectivefarm.eu.auth0.com');
-		});
-
-		var userProfile;
-
-		$('.btn-login').click(function(e) {
-		  e.preventDefault();
-		  lock.show(function(err, profile, token) {
-		    if (err) {
-		      // Error callback
-		      alert('There was an error');
-		    } else {
-		      // Success callback
-
-		      // Save the JWT token.
-		      localStorage.setItem('userToken', token);
-
-		      // Save the profile
-		      userProfile = profile;
-		    }
-		  });
-		});
-
-		$.ajaxSetup({
-			  'beforeSend': function(xhr) {
-			    if (localStorage.getItem('userToken')) {
-			      xhr.setRequestHeader('Authorization',
-			            'Bearer ' + localStorage.getItem('userToken'));
-			    }
-			  }
-			});
-
-		//$('.nick').text(userProfile.nickname);
-
-		localStorage.removeItem('token');
-		userProfile = null;
-		window.location.href = "/";
-
-		</script>
+	
 </head>
 <body>
 		<!----start-container---->
