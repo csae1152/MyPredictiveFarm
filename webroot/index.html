@@ -9,9 +9,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>My Predective Farm</title>
 <link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/login.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="web/js/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script src=""></script>
 
 <!---- start-smoth-scrolling---->
 <script type="text/javascript" src="web/js/move-top.js"></script>
@@ -46,107 +49,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 <!----//webfonts---->
-<style type="text/css">
-body {
-  font-family: "proxima-nova", sans-serif;
-  text-align: center;
-  font-size: 300%;
-  font-weight: 100;
-}
-input[type=checkbox],
-input[type=radio] {
-  position: absolute;
-  opacity: 0;
-}
-input[type=checkbox] + label,
-input[type=radio] + label {
-  display: inline-block;
-}
-input[type=checkbox] + label:before,
-input[type=radio] + label:before {
-  content: "";
-  display: inline-block;
-  vertical-align: -0.2em;
-  width: 1em;
-  height: 1em;
-  border: 0.15em solid #0074d9;
-  border-radius: 0.2em;
-  margin-right: 0.3em;
-  background-color: white;
-}
-input[type=radio] + label:before {
-  border-radius: 50%;
-}
-input[type=radio]:checked + label:before,
-input[type=checkbox]:checked + label:before {
-  background-color: #0074d9;
-  box-shadow: inset 0 0 0 0.15em white;
-}
-input[type=radio]:focus + label:before,
-input[type=checkbox]:focus + label:before {
-  outline: 0;
-}
-.btn {
-  font-size: 140%;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 0;
-  background-color: #16214D;
-  color: white;
-}
-.btn:hover {
-  background-color: #44C7F4;
-}
-.btn:focus {
-  outline: none !important;
-}
-.btn.btn-lg {
-  padding: 20px 30px;
-}
-.btn:disabled {
-  background-color: #333;
-  color: #666;
-}
-h1,
-h2,
-h3 {
-  font-weight: 100;
-}
-#logo img {
-  width: 300px;
-  margin-bottom: 60px;
-}
-.home-description {
-  font-weight: 100;
-  margin: 100px 0;
-}
-h2 {
-  margin-top: 30px;
-  margin-bottom: 40px;
-  font-size: 200%;
-}
-label {
-  font-size: 100%;
-  font-weight: 300;
-}
-.btn-next {
-  margin-top: 30px;
-}
-.answer {
-  width: 70%;
-  margin: auto;
-  text-align: left;
-  padding-left: 10%;
-  margin-bottom: 20px;
-}
-.login-page .login-box {
-  padding: 100px 0;
-}
-
-
-
-
-</style>
 <!----start-top-nav-script---->
 		<script>
 			$(function() {
@@ -164,67 +66,7 @@ label {
 	        		}
 	    		});
 			});
-
-			$(document).ready(function() {
-			    var lock = new Auth0Lock(
-			      // All these properties are set in auth0-variables.js
-			    		var AUTH0_CLIENT_ID='R3Xvq6jPmaI6b712OH3D0IERdtaveKXE'; 
-			    		var AUTH0_DOMAIN='mypredectivefarm.eu.auth0.com'; 
-			    		var AUTH0_CALLBACK_URL=location.href;
-			    );
-
-			    var userProfile;
-
-			    $('.btn-login').click(function(e) {
-			      e.preventDefault();
-			      lock.showSignin(function(err, profile, token) {
-			        if (err) {
-			          // Error callback
-			          console.log("There was an error");
-			          alert("There was an error logging in");
-			        } else {
-			          // Success calback
-
-			          // Save the JWT token.
-			          localStorage.setItem('userToken', token);
-
-			          // Save the profile
-			          userProfile = profile;
-
-			          $('.login-box').hide();
-			          $('.logged-in-box').show();
-			          $('.nickname').text(profile.nickname);
-			          $('.nickname').text(profile.name);
-			          $('.avatar').attr('src', profile.picture);
-			        }
-			      });
-			    });
-
-			    $.ajaxSetup({
-			      'beforeSend': function(xhr) {
-			        if (localStorage.getItem('userToken')) {
-			          xhr.setRequestHeader('Authorization',
-			                'Bearer ' + localStorage.getItem('userToken'));
-			        }
-			      }
-			    });
-
-			    $('.btn-api').click(function(e) {
-			      // Just call your API here. The header will be sent
-			      $.ajax({
-			        url: 'http://localhost:3001/secured/ping',
-			        method: 'GET'
-			      }).then(function(data, textStatus, jqXHR) {
-			        alert("The request to the secured enpoint was successfull");
-			      }, function() {
-			        alert("You need to download the server seed and start it to call this API");
-			      });
-			    });
-
-
-			});
-
-			
+		
 		</script>
 		<!----//End-top-nav-script---->
 		
