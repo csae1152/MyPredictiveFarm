@@ -14,5 +14,7 @@ For more information please visit: http://jbossvertx-easyfarming.rhcloud.com/
 Feature list:
 
 1. Computer aided diagnosis - Upload an image from your animal and we will analyze maybe upcoming deseas.
+2. Making your decisions easier - Based on interactive decesion helpers through predective analysis.
+3. New open layer map features which help you keeping an eye on your concerns.
 
 
