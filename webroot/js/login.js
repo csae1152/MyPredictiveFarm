@@ -3,12 +3,12 @@
  */
 
 $(document).ready(function() {
-			    var lock = new Auth0Lock(
-			      // All these properties are set in auth0-variables.js
-			    		var AUTH0_CLIENT_ID='R3Xvq6jPmaI6b712OH3D0IERdtaveKXE'; 
-			    		var AUTH0_DOMAIN='mypredectivefarm.eu.auth0.com'; 
-			    		var AUTH0_CALLBACK_URL=location.href;
-			    );
+	  var lock = new Auth0Lock(
+		      // All these properties are set in auth0-variables.js
+		      AUTH0_CLIENT_ID,
+		      AUTH0_DOMAIN
+		    );
+
 
 			    var userProfile;
 
