@@ -25,6 +25,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!---- start-smoth-scrolling---->
 <!-- Custom Theme files -->
 <link href="web/css/theme-style.css" rel='stylesheet' type='text/css' />
+
+<!-- Auth0 lock script -->
+<script src="//cdn.auth0.com/js/lock-7.5.min.js"></script>
+
+<!-- Setting the right viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -55,6 +63,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 		</script>
 		<!----//End-top-nav-script---->
+		
+		<script type="text/javascript">
+
+		var lock = null;
+		$(document).ready(function() {
+		   lock = new Auth0Lock('R3Xvq6jPmaI6b712OH3D0IERdtaveKXE', 'mypredectivefarm.eu.auth0.com');
+		});
+
+		var userProfile;
+
+		$('.btn-login').click(function(e) {
+		  e.preventDefault();
+		  lock.show(function(err, profile, token) {
+		    if (err) {
+		      // Error callback
+		      alert('There was an error');
+		    } else {
+		      // Success callback
+
+		      // Save the JWT token.
+		      localStorage.setItem('userToken', token);
+
+		      // Save the profile
+		      userProfile = profile;
+		    }
+		  });
+		});
+
+		$.ajaxSetup({
+			  'beforeSend': function(xhr) {
+			    if (localStorage.getItem('userToken')) {
+			      xhr.setRequestHeader('Authorization',
+			            'Bearer ' + localStorage.getItem('userToken'));
+			    }
+			  }
+			});
+
+		$('.nick').text(userProfile.nickname);
+
+		localStorage.removeItem('token');
+		userProfile = null;
+		window.location.href = "/";
+
+		</script>
 </head>
 <body>
 		<!----start-container---->
@@ -83,6 +135,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h1>Predictive analytics for Your Farm</h1>
 					<span></span>
 					<a class="slide-btn" href="index_dashboard.html">First draft - Have a look ...</a>
+					<input type="submit" class="btn-login" />
 				</div>
 				<!----//End-top-nav---->
 			</div>
