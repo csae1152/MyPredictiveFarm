@@ -20,7 +20,7 @@ input[type=radio] + label:before {
   content: "";
   display: inline-block;
   vertical-align: -0.2em;
-  width: 1em;
+  width: 50px;
   height: 1em;
   border: 0.15em solid #0074d9;
   border-radius: 0.2em;
