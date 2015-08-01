@@ -46,7 +46,7 @@ input[type=checkbox]:focus + label:before {
   border: 0;
   background-color: #D1D3DF;
   color: white;
-  width: 50%
+  width: 70%
 }
 .btn:hover {
   background-color: #44C7F4;
