@@ -44,8 +44,9 @@ input[type=checkbox]:focus + label:before {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 0;
-  background-color: #16214D;
+  background-color: #D1D3DF;
   color: white;
+  width: 50%
 }
 .btn:hover {
   background-color: #44C7F4;
@@ -54,7 +55,7 @@ input[type=checkbox]:focus + label:before {
   outline: none !important;
 }
 .btn.btn-lg {
-  padding: 20px 30px;
+  padding: 0px 0px;
 }
 .btn:disabled {
   background-color: #333;
