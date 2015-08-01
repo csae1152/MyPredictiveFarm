@@ -55,7 +55,7 @@ input[type=checkbox]:focus + label:before {
   outline: none !important;
 }
 .btn.btn-lg {
-  padding: 0px 0px;
+  padding: 20px 30px;
 }
 .btn:disabled {
   background-color: #333;
