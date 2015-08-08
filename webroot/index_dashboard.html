@@ -35,6 +35,48 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
+    	<script language="JavaScript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script language="JavaScript" src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script language="JavaScript" src="scriptcam.js"></script>
+		<script language="JavaScript"> 
+			$(document).ready(function() {
+				$("#webcam").scriptcam({
+					showMicrophoneErrors:false,
+					onError:onError,
+					cornerRadius:20,
+					disableHardwareAcceleration:1,
+					cornerColor:'e3e5e2',
+					onWebcamReady:onWebcamReady,
+					uploadImage:'upload.gif',
+					onPictureAsBase64:base64_tofield_and_image
+				});
+			});
+			function base64_tofield() {
+				$('#formfield').val($.scriptcam.getFrameAsBase64());
+			};
+			function base64_toimage() {
+				$('#image').attr("src","data:image/png;base64,"+$.scriptcam.getFrameAsBase64());
+			};
+			function base64_tofield_and_image(b64) {
+				$('#formfield').val(b64);
+				$('#image').attr("src","data:image/png;base64,"+b64);
+			};
+			function changeCamera() {
+				$.scriptcam.changeCamera($('#cameraNames').val());
+			}
+			function onError(errorId,errorMsg) {
+				$( "#btn1" ).attr( "disabled", true );
+				$( "#btn2" ).attr( "disabled", true );
+				alert(errorMsg);
+			}			
+			function onWebcamReady(cameraNames,camera,microphoneNames,microphone,volume) {
+				$.each(cameraNames, function(index, text) {
+					$('#cameraNames').append( $('<option></option>').val(index).html(text) )
+				}); 
+				$('#cameraNames').val(camera);
+			}
+		</script> 
+    
     <link rel="stylesheet" href="examples/assets/demo.css">
 
   <script src="build_tracking/tracking-min.js"></script>
@@ -865,7 +907,25 @@
                 </div>
               </div>
               <!-- /.box -->
-
+              
+              <div style="width:330px;float:left;">
+			<div id="webcam">
+			</div>
+			<div style="margin:5px;">
+				<img src="webcamlogo.png" style="vertical-align:text-top"/>
+				<select id="cameraNames" size="1" onChange="changeCamera()" style="width:245px;font-size:10px;height:25px;">
+				</select>
+			</div>
+		</div>
+		<div style="width:135px;float:left;">
+			<p><button class="btn btn-small" id="btn1" onclick="base64_tofield()">Snapshot to form</button></p>
+			<p><button class="btn btn-small" id="btn2" onclick="base64_toimage()">Snapshot to image</button></p>
+		</div>
+		<div style="width:200px;float:left;">
+			<p><textarea id="formfield" style="width:190px;height:70px;"></textarea></p>
+			<p><img id="image" style="width:200px;height:153px;"/></p>
+		</div>
+<!--  
  <div class="demo-title">
     <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － get user's webcam and detect faces</p>
   </div>
@@ -903,7 +963,7 @@
       gui.add(tracker, 'initialScale', 1.0, 10.0).step(0.1);
       gui.add(tracker, 'stepSize', 1, 5).step(0.1);
     };
-  </script>
+  </script> -->
 
               <!-- solid sales graph -->
               <div class="box box-solid bg-teal-gradient">
