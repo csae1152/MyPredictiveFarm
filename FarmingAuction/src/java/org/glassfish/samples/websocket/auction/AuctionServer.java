@@ -87,6 +87,11 @@ public class AuctionServer {
             auction.removeArc(session);
         }
     }
+    
+    public void handleReopenConnection(Session session) {
+            Session session = new Session();
+            session.getSession() -> {s.close};
+    }
 
     @OnMessage
     public void handleMessage(AuctionMessage message, Session session){

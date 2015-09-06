@@ -62,6 +62,7 @@ public class FarmDevices {
     /**
      * 
      */
+     @Basic(optional = true, fetch = FetchType.LAZY)
     private final String owner;
     
     @Transient

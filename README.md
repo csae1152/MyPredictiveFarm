@@ -17,6 +17,10 @@ Feature list:
 2. Making your decisions easier - Based on interactive decesion helpers through predective analysis.
 3. New open layer map features which help you keeping an eye on your concerns.
 
+New feature:
+
+You can login with your existing facebook, Google+ and Github acount.
+
 Authentication supported with auth0.
 
 
