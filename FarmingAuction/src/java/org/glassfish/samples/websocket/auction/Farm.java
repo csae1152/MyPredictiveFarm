@@ -26,7 +26,7 @@ public class Farm {
     private AuctionState state;
 
     /*
-     * ID of the auction used for communication
+     * ID for the communication used with stormpath API.
      */
     private final String id;
 

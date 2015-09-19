@@ -75,9 +75,9 @@ public class AuctionServer {
      * Set of auctions (finished, running, to be started auctions).
      */
     private static final Set<Farm> auctions = Collections.unmodifiableSet(new HashSet<Farm>() {{
-        add(new Farm(new FarmDevices("Traction engine", "Nice Swatch watches, hand made", 100, 20)));
-        add(new Farm(new FarmDevices("Gearbox shaft", "Nice Rolex watches, hand made", 200, 20)));
-        add(new Farm(new FarmDevices("Harvester", "Nice Omega watches, hand made", 300, 20)));
+        add(new Farm(new FarmDevices("Traction engine", "Nice Swatch watches, hand made", 400, 20)));
+        add(new Farm(new FarmDevices("Gearbox shaft", "Nice Rolex watches, hand made", 200, 10)));
+        add(new Farm(new FarmDevices("Harvester", "Nice Omega watches, hand made", 800, 20)));
        
     }});
 
@@ -86,6 +86,11 @@ public class AuctionServer {
         for (Farm auction : auctions) {
             auction.removeArc(session);
         }
+    }
+    
+    public void handleReopenConnection(Session session) {
+            Session session = new Session();
+            session.getSession() -> {s.close};
     }
 
     @OnMessage
