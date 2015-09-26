@@ -1,6 +1,5 @@
-For more details about this cartridge please visit:
- 
-https://github.com/vert-x/openshift-cartridge
+Architecturale Overview
+=======================
 
 MyPredectiveTools uses a set of technologies that interact between them to implement these layers:
 
