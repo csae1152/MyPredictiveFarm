@@ -4,9 +4,10 @@ Architecturale Overview
 MyPredectiveTools uses a set of technologies that interact between them to implement these layers:
 
 Apache Kafka: this is our data stream. Different devices will be generating messages in Kafka topics.
-  Schema registry - We will use Avro-schemas for Kafka topics.
-  REST proxy which will allow us to consume Kafka topics.
-  Camus, a Map-Reduce-Job to store messages from Kafka into HDFS.
+
+Schema registry - We will use Avro-schemas for Kafka topics.
+REST proxy which will allow us to consume Kafka topics.
+Camus, a Map-Reduce-Job to store messages from Kafka into HDFS.
 
 HDFS: this is where our main dataset is stored.
 
