@@ -3,9 +3,9 @@ Architecturale Overview
 
 With our platform you will be able to communicate with agricultural workers around the world helping you getting better in what you do.
 
-Please have a look at your first release:
+Please have a look at your first release: http://jbossvertx-easyfarming.rhcloud.com/
 
-We are maintaining a blog to keep you up to date:
+We are maintaining a blog to keep you up to date:  http://mypredectivefarm.blogspot.co.at/
 
 MyPredectiveTools uses a set of technologies that interact between them to implement these layers:
 
