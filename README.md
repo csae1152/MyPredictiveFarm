@@ -27,4 +27,6 @@ Upcoming Features
 =================
 
  - Retina image upload
+ - Rainfall forecast
+ - Bidding platform for agricultural devices
 
