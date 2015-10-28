@@ -29,4 +29,5 @@ Upcoming Features
  - Retina image upload via tracking.js
  - Rainfall forecast
  - Bidding platform for agricultural devices
+ 
 
