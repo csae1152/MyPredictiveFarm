@@ -4,7 +4,7 @@ body {
   font-family: "proxima-nova", sans-serif;
   text-align: center;
   font-size: 300%;
-  font-weight: 100;
+  font-weight: bold;
 }
 input[type=checkbox],
 input[type=radio] {
@@ -20,7 +20,7 @@ input[type=radio] + label:before {
   content: "";
   display: inline-block;
   vertical-align: -0.2em;
-  width: 50px;
+  width: 80px;
   height: 1em;
   border: 0.15em solid #0074d9;
   border-radius: 0.2em;
@@ -40,7 +40,7 @@ input[type=checkbox]:focus + label:before {
   outline: 0;
 }
 .btn {
-  font-size: 140%;
+  font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 0;
