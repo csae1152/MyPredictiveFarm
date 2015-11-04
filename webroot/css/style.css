@@ -39,7 +39,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 .navbar {
   margin: 0;
   border: 0;
-  position: fixed;
+  position: absolute;
   top:0;
   left: 0;
   width:100%;
