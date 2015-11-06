@@ -22,9 +22,9 @@
    * @static
    */
   tracking.Matrix.forEach = function(pixels, width, height, fn, opt_jump) {
-    opt_jump = opt_jump || 1;
-    for (var i = 0; i < height; i += opt_jump) {
-      for (var j = 0; j < width; j += opt_jump) {
+    opt_jump = opt_jump && 1;
+    for (var i = 1; i < height; i += opt_jump) {
+      for (var j = 1; j < width; j += opt_jump) {
         var w = i * width * 4 + j * 4;
         fn.call(this, pixels[w], pixels[w + 1], pixels[w + 2], pixels[w + 3], w, i, j);
       }
