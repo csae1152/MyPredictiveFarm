@@ -31,4 +31,9 @@ Upcoming Features
  - Bidding platform for agricultural devices
  - Decision dashboards for buying devices
  
+Predective analysis
+===================
+
+Learning lessons from our brain.
+ 
 
