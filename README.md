@@ -7,6 +7,8 @@ Please have a look at your first release: http://jbossvertx-easyfarming.rhcloud.
 
 We are maintaining a blog to keep you up to date:  http://mypredectivefarm.blogspot.co.at/
 
+Great! We are on Google+: https://plus.google.com/u/0/communities/118045655178910862948
+
 MyPredectiveTools uses a set of technologies that interact between them to implement these layers:
 
 Apache Kafka: this is our data stream. Different devices will be generating messages in Kafka topics.
