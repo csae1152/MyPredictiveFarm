@@ -35,5 +35,10 @@ Predective analysis
 ===================
 
 Learning lessons from our brain.
+
+Overview - Technical layout of retinal image analysis
+=====================================================
+
+We will do it with Spark and Scala.
  
 
