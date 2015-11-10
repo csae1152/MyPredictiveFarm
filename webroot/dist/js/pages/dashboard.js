@@ -116,7 +116,7 @@ $(function () {
   });
 
   //The Calender
-  $("#calendar").datepicker();
+  $("#calendar").datetimepicker();
 
   //SLIMSCROLL FOR CHAT WIDGET
   $('#chat-box').slimScroll({
@@ -126,8 +126,8 @@ $(function () {
   /* Morris.js Charts */
   // Sales chart
   var area = new Morris.Area({
-    element: 'revenue-chart',
-    resize: true,
+    element: 'predective-chart',
+    resize: false,
     data: [
       {y: '2011 Q1', item1: 2666, item2: 2666},
       {y: '2011 Q2', item1: 2778, item2: 2294},
