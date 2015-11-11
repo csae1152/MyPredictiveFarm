@@ -68,6 +68,12 @@ public class SimpleREST extends AbstractVerticle {
       }
     }
   }
+  
+  private void collectIsoBusTractorId(RoutingContext routingContext) {
+    JsonArray arr = new JsonArray();
+    tractor.forEach((k, v) -> arr.add(v));
+    routingContext.response().putHeader("content-type", "application/json").end(arr.encodePrettily());
+  }
 
   private void handleListProducts(RoutingContext routingContext) {
     JsonArray arr = new JsonArray();
