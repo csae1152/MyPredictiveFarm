@@ -32,7 +32,8 @@ module.exports = function (grunt) {
           "dist/css/skins/skin-green-light.css": "build/less/skins/skin-green-light.less",
           "dist/css/skins/skin-red-light.css": "build/less/skins/skin-red-light.less",
           "dist/css/skins/skin-purple-light.css": "build/less/skins/skin-purple-light.less",
-          "dist/css/skins/_all-skins.css": "build/less/skins/_all-skins.less"
+          "dist/css/skins/_all-skins.css": "build/less/skins/_all-skins.less",
+          "dist/css/skins/default.skin.scss"
         }
       },
       // Production compresses version
