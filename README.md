@@ -13,6 +13,8 @@ A big part of our application will be computer aided diagnosis for your animals.
 
 Please have a look at your first release: http://jbossvertx-easyfarming.rhcloud.com/
 
+New refatored version is running parallel: http://mypredectivefarm-easyfarming.rhcloud.com/
+
 We are maintaining a blog to keep you up to date:  http://mypredectivefarm.blogspot.co.at/
 
 Great! We are on Google+: https://plus.google.com/u/0/communities/118045655178910862948
