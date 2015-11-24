@@ -27,7 +27,7 @@ vertx.createHttpServer().requestHandler(function(req) {
   req.response.sendFile('webroot/' + file);
 }).listen(port, ip, function(err) {
     if (!err) {
-      console.log('Successfully listening on ' + ip + ':' + port);
+      console.log('Connection established on ' + ip + ':' + port);
     } else {
       console.log('Could not bind to ' + ip + ':' + port + '. Error: ' + err);
     }
