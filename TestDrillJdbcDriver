@@ -32,6 +32,7 @@ public class TestDrillJdbcDriver {
         System.out.println(rs.getString(1));
         System.out.println(rs.getString(2));
         System.out.println(rs.getString(3));
+        System.out.println(rs.getString(4));
         count++;
       }
       Assert.assertEquals(count, 20, "Twenty rows were expected.");
