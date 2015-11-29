@@ -47,6 +47,7 @@
     var integralImage = new Int32Array(width * height);
     var integralImageSquare = new Int32Array(width * height);
     var tiltedIntegralImage = new Int32Array(width * height);
+    var isoAgroBusPanel = new Int32Array(width * length);
 
     var integralImageSobel;
     if (edgesDensity > 0) {
