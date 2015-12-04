@@ -8,8 +8,8 @@
   "description": "Admin dashboard and control panel template",
   "main": [
     "index2.html",
-    "dist/css/AdminLTE.css",
-    "dist/js/app.js",
+    "dist/css/mypredectivefarm.css",
+    "dist/js/mypredectivefarm.js",
     "build/less/AdminLTE.less"
   ],
   "keywords": [
