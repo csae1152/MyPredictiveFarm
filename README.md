@@ -13,7 +13,7 @@ A big part of our application will be computer aided diagnosis for your animals.
 
 Please have a look at your first release: http://jbossvertx-easyfarming.rhcloud.com/
 
-New refatored version is running parallel: http://mypredectivefarm-easyfarming.rhcloud.com/
+New refactored version is running parallel: http://mypredectivefarm-easyfarming.rhcloud.com/
 
 We are maintaining a blog to keep you up to date:  http://mypredectivefarm.blogspot.co.at/
 
@@ -52,5 +52,18 @@ Overview - Technical layout of retinal image analysis
 =====================================================
 
 We will do it with Spark and Scala.
+
+Frontend architecture overview
+==============================
+
+Browserify
+Babel(ES6)
+Handlebars
+Gulp
+Mocha + Chai
+Sinon
+Pioneer
+
+and on top it's Backbone.js running
  
 
