@@ -56,13 +56,13 @@ We will do it with Spark and Scala.
 Frontend architecture overview
 ==============================
 
-Browserify
-Babel(ES6)
-Handlebars
-Gulp
-Mocha + Chai
-Sinon
-Pioneer
+- Browserify
+- Babel(ES6)
+- Handlebars
+- Gulp
+- Mocha + Chai
+- Sinon
+- Pioneer
 
 and on top it's Backbone.js running
  
