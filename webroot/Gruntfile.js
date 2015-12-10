@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         },
         files: {
           // compilation.css  :  source.less          
-          "dist/css/AdminLTE.css": "build/less/AdminLTE.less",
+          "dist/css/AdminLTE.css": "build/less/mypredectivefarm.less",
           //Non minified skin files
           "dist/css/skins/skin-blue.css": "build/less/skins/skin-blue.less",
           "dist/css/skins/skin-black.css": "build/less/skins/skin-black.less",
