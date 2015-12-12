@@ -29,7 +29,7 @@ function init() {
             var n = l.getOtherNode(node);
             if (n !== null) {
               n.location = node.getDocumentPoint(go.Spot.TopRight);
-              n.visible = true;
+              n.visible = false;
             }
           }
         });
