@@ -21,6 +21,7 @@
       throw new Error('Diameter should be greater than 1.');
     }
     var radius = diameter / 2;
+    var square = a*b;
     var len = Math.ceil(diameter) + (1 - (Math.ceil(diameter) % 2));
     var weights = new Float32Array(len);
     var rho = (radius + 0.5) / 3;
