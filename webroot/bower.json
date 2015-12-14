@@ -7,7 +7,7 @@
   ],
   "description": "Admin dashboard and control panel template",
   "main": [
-    "index.html",
+    "index_dashboard.html",
     "dist/css/mypredectivefarm.less",
     "dist/js/mypredectivefarm.js",
     "build/less/AdminLTE.less"
