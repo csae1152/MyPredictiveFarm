@@ -8,6 +8,7 @@
     tracking.Tracker.base(this, 'constructor');
   };
 
+  isoagrobus.inherits(tracking.Tracker, tracking.isoagrobus);
   tracking.inherits(tracking.Tracker, tracking.EventEmitter);
 
   /**
