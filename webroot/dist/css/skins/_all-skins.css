@@ -220,7 +220,7 @@
 }
 .skin-blue-light .sidebar-menu > li > a {
   border-left: 3px solid transparent;
-  font-weight: 600;
+  font-weight: 800;
 }
 .skin-blue-light .sidebar-menu > li:hover > a,
 .skin-blue-light .sidebar-menu > li.active > a {
@@ -231,7 +231,7 @@
   border-left-color: #3c8dbc;
 }
 .skin-blue-light .sidebar-menu > li.active > a {
-  font-weight: 600;
+  font-weight: 400;
 }
 .skin-blue-light .sidebar-menu > li > .treeview-menu {
   background: #f4f4f5;
@@ -250,12 +250,12 @@
   color: #000000;
 }
 .skin-blue-light .treeview-menu > li.active > a {
-  font-weight: 600;
+  font-weight: 100;
 }
 .skin-blue-light .sidebar-form {
   border-radius: 3px;
   border: 1px solid #d2d6de;
-  margin: 10px 10px;
+  margin: 10px 4px;
 }
 .skin-blue-light .sidebar-form input[type="text"],
 .skin-blue-light .sidebar-form .btn {
