@@ -94,7 +94,6 @@ module.exports = function (grunt) {
           'dist/css/AdminLTE-rtl.css': 'dist/css/AdminLTE.css',
           'dist/css/AdminLTE-rtl.min.css': 'dist/css/AdminLTE.min.css',
           'bootstrap/css/bootstrap-rtl.css': 'bootstrap/css/bootstrap.css',
-          'bootstrap/css/bootstrap-rtl.min.css': 'bootstrap/css/bootstrap.min.css'
         }
       }
     }
@@ -111,7 +110,7 @@ module.exports = function (grunt) {
   // Include Files Within HTML
   grunt.loadNpmTasks('grunt-includes');
   // Convert CSS to RTL
-  grunt.loadNpmTasks('grunt-cssjanus');
+  grunt.loadNpmTasks('grunt-cssisoagrobus');
 
   // The default task (running "grunt" in console) is "watch"
   grunt.registerTask('default', ['watch']);
