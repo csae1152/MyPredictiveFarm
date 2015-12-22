@@ -3,14 +3,14 @@
   "version": "2.1.0",
   "homepage": "http://almsaeedstudio.com",
   "authors": [
-    "Abdullah Almsaeed <almasaeed2010@gmail.com>"
+    "Helmut Steiner>"
   ],
   "description": "Admin dashboard and control panel template",
   "main": [
     "index_dashboard.html",
     "dist/css/mypredectivefarm.less",
     "dist/js/mypredectivefarm.js",
-    "build/less/AdminLTE.less"
+    "build/less/isoagrobus.less"
   ],
   "keywords": [
     "css",
