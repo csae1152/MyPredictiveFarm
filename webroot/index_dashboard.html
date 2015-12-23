@@ -77,7 +77,7 @@
           }
         });
       myDiagram.toolManager.hideToolTip();
-      node.diagram.commitTransaction("expand/collapse");
+      node.diagram.commitTransaction("expand/extend");
     }
 
     // recursive function for collapsing complete subtree
@@ -115,7 +115,7 @@
           {
             font: "8pt sans-serif",
             wrap: go.TextBlock.WrapFit,
-            desiredSize: new go.Size(200, NaN),
+            desiredSize: new go.Size(100, NaN),
             alignment: go.Spot.Center,
             margin: 6
           },
@@ -132,7 +132,7 @@
         // define a horizontal Panel to place the node's text alongside the buttons
         $(go.Panel, "Horizontal",
           $(go.TextBlock,
-            { font: "26pt sans-serif", margin: 5 },
+            { font: "26pt sans-serif", margin: 4 },
             new go.Binding("text", "key")),
           // define a vertical panel to place the node's two buttons one above the other
           $(go.Panel, "Vertical",
