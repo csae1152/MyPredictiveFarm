@@ -61,7 +61,8 @@ $(function () {
     "BR": 600, //Brazil
     "IN": 800, //India
     "GB": 320, //Great Britain
-    "RU": 3000 //Russia
+    "RU": 3000, //Russia
+    "AT": 100, //Austria
   };
   //World map by jvectormap
   $('#world-map').vectorMap({
