@@ -142,8 +142,8 @@ jQuery.extend( jQuery.easing,
 		}
 	},
 	easeInOutBounce: function (x, t, b, c, d) {
-		if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
-		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+		if (t < d/2) return jQuery.easing.easeInBounce (x, t*4, 0, c, d) * .3 + b;
+		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .10 + c*.10 + b;
 	}
 });
 
