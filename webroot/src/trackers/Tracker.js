@@ -7,8 +7,12 @@
   tracking.Tracker = function() {
     tracking.Tracker.base(this, 'constructor');
   };
+  
+  tracking.IsoAgroBus = function() {
+    tracking.isoagrobus.base(this, 'constructor');
+  };
 
-  isoagrobus.inherits(tracking.Tracker, tracking.isoagrobus);
+  isoagrobus.inherits(tracking.IsoAgroBus, tracking.isoagrobus);
   tracking.inherits(tracking.Tracker, tracking.EventEmitter);
 
   /**
