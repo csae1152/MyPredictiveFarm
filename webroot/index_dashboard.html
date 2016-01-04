@@ -71,7 +71,7 @@
             l.visible = true;
             var n = l.getOtherNode(node);
             if (n !== null) {
-              n.location = node.getDocumentPoint(go.Spot.TopRight);
+              n.location = node.getDocumentPoint(go.Spot.TopLeft);
               n.visible = true;
             }
           }
@@ -94,7 +94,7 @@
 
     // get the text for the tooltip from the data on the object being hovered over
     function tooltipTextConverter(data) {
-      var str = "";
+      var str = "isoagrobus";
       var e = myDiagram.lastInput;
       var currobj = e.targetObject;
       if (currobj !== null && (currobj.name === "ButtonA" ||
@@ -123,7 +123,7 @@
       );
 
     // define the Node template for non-leaf nodes
-    myDiagram.nodeTemplateMap.add("decision",
+    myDiagram.nodeTemplateMap.remove("decision",
       $(go.Node, "Auto",
         new go.Binding("text", "key"),
         // define the node's outer shape, which will surround the Horizontal Panel
