@@ -49,7 +49,7 @@
     if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
     var $ = go.GraphObject.make;  // for conciseness in defining templates
 
-    myDiagram = $(go.Diagram, "myDiagram",  // must name or refer to the DIV HTML element
+    myDiagram = $(go.Diagram, "predective_diagram",  // must name or refer to the DIV HTML element
                   {
                     initialContentAlignment: go.Spot.Left,
                     allowSelect: false,  // the user cannot select any part
@@ -168,7 +168,7 @@
         $(go.Shape, "Rectangle",
           { fill: "whitesmoke", stroke: "lightgray" }),
         $(go.TextBlock,
-          { wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5 },
+          { wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(100, NaN), margin: 1 },
           new go.Binding("text", "text"))
       ));
 
