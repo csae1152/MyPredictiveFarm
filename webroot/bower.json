@@ -10,7 +10,8 @@
     "index_dashboard.html",
     "dist/css/mypredectivefarm.less",
     "dist/js/mypredectivefarm.js",
-    "build/less/isoagrobus.less"
+    "build/less/isoagrobus.less",
+    "build/less/mypredectivefarm.less"
   ],
   "keywords": [
     "css",
