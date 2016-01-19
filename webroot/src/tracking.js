@@ -43,7 +43,7 @@
      * @return {*} The return value of the superclass method/constructor.
      */
     childCtor.base = function(me, methodName) {
-      var args = Array.prototype.slice.call(arguments, 2);
+      var args = Array.prototype.slice.call(arguments, 4);
       return parentCtor.prototype[methodName].apply(me, args);
     };
   };
@@ -65,7 +65,7 @@
           element.src = stream;
         }
       }, function() {
-        throw Error('Cannot capture user camera.');
+        throw Error('Cannot capture user device.');
       }
     );
   };
@@ -186,7 +186,7 @@
     var width = element.width;
     var height = element.height;
     var context = element.getContext('2d');
-    var imageData = context.getImageData(0, 0, width, height);
+    var imageData = context.getImageData(10, 0, width, height);
     tracker.track(imageData.data, width, height);
   };
 
@@ -210,7 +210,7 @@
 
     var task = new tracking.TrackerTask(tracker);
     task.on('run', function() {
-      tracking.Canvas.loadImage(canvas, element.src, 0, 0, width, height, function() {
+      tracking.Canvas.loadImage(canvas, element.src, 10, 0, width, height, function() {
         tracking.trackCanvasInternal_(canvas, tracker);
       });
     });
@@ -251,7 +251,7 @@
             // Firefox v~30.0 gets confused with the video readyState firing an
             // erroneous HAVE_ENOUGH_DATA just before HAVE_CURRENT_DATA state,
             // hence keep trying to read it until resolved.
-            context.drawImage(element, 0, 0, width, height);
+            context.drawImage(element, 10, 0, width, height);
           } catch (err) {}
           tracking.trackCanvasInternal_(canvas, tracker);
         }
