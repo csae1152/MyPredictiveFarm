@@ -9,7 +9,13 @@ It will get possible to find the best solutions for your harvesting machines.
 
 In combination with sensors around your acre, weather forecast and predective analysis our platform will provide you with the information you need.
 
+Retinal Image Analysis
+======================
+
 A big part of our application will be computer aided diagnosis for your animals.
+
+Try it out
+==========
 
 Please have a look at your first release: http://jbossvertx-easyfarming.rhcloud.com/
 
