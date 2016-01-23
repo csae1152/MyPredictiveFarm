@@ -50,7 +50,8 @@ Upcoming Features
 Predective analysis
 ===================
 
-Learning lessons from our brain.
+With our predective engine we will let you know what will happen in the future.
+We will provide you easy to read predective analysis charts. (Based on d3.js)
 
 Overview - Technical layout of retinal image analysis
 =====================================================
