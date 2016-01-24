@@ -14,6 +14,12 @@ Retinal Image Analysis
 
 A big part of our application will be computer aided diagnosis for your animals.
 
+It's easy as pie: 
+
+- Take an image of your animals retina
+- Upload it to your MyPredectiveFarm retinal image analysis application
+- Get the results in a few seconds
+
 Try it out
 ==========
 
