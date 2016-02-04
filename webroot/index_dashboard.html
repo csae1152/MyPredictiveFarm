@@ -51,7 +51,7 @@
 
     myDiagram = $(go.Diagram, "predective_diagram",  // must name or refer to the DIV HTML element
                   {
-                    initialContentAlignment: go.Spot.Left,
+                    initialContentAlignment: go.Spot.Right,
                     allowSelect: false,  // the user cannot select any part
                     // create a TreeLayout for the decision tree
                     layout: $(go.TreeLayout)
@@ -71,7 +71,7 @@
             l.visible = true;
             var n = l.getOtherNode(node);
             if (n !== null) {
-              n.location = node.getDocumentPoint(go.Spot.TopLeft);
+              n.location = node.getDocumentPoint(go.Spot.TopRight);
               n.visible = true;
             }
           }
@@ -132,7 +132,7 @@
         // define a horizontal Panel to place the node's text alongside the buttons
         $(go.Panel, "Horizontal",
           $(go.TextBlock,
-            { font: "26pt sans-serif", margin: 4 },
+            { font: "10pt sans-serif", margin: 8 },
             new go.Binding("text", "key")),
           // define a vertical panel to place the node's two buttons one above the other
           $(go.Panel, "Vertical",
