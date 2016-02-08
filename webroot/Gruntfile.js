@@ -81,10 +81,10 @@ module.exports = function (grunt) {
         src: ['*.html'], // Source files 
         dest: 'documentation/', // Destination directory 
         flatten: true,
-        cwd: 'documentation/build',
+        cwd: 'mypredictivefarm/build',
         options: {
           silent: true,
-          includePath: 'documentation/build/include'
+          includePath: 'mypredictivefarm/build/include'
         }
       }
     },
