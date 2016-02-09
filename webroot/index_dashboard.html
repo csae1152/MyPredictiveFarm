@@ -47,11 +47,11 @@
     <script id="code">
   function init() {
     if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
-    var $ = go.GraphObject.make;  // for conciseness in defining templates
+    var $ = go.GraphObject.serve;  // for conciseness in defining templates
 
-    myDiagram = $(go.Diagram, "predective_diagram",  // must name or refer to the DIV HTML element
+    myDiagram = $(go.Diagram, "mypredectivefarm_diagram",  // must name or refer to the DIV HTML element
                   {
-                    initialContentAlignment: go.Spot.Right,
+                    initialContentAlignment: go.Spot.Left,
                     allowSelect: false,  // the user cannot select any part
                     // create a TreeLayout for the decision tree
                     layout: $(go.TreeLayout)
