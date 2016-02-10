@@ -3,7 +3,7 @@
  */
 
 function init() {
-    if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+    if (window.myFarmSamples) myFarmSamples();  // init for these samples -- you don't need to call this
     var $ = go.GraphObject.make;  // for conciseness in defining templates
 
     myDiagram = $(go.Diagram, "myDiagram",  // must name or refer to the DIV HTML element
@@ -38,7 +38,7 @@ function init() {
     }
 
     // recursive function for collapsing complete subtree
-    function collapseTree(node, portid) {
+    function collapseTree(node, deviceId) {
       node.findLinksOutOf(portid).each(function(l) {
           l.visible = false;
           var n = l.getOtherNode(node);
@@ -149,7 +149,7 @@ function init() {
 
     // make all but the start node invisible
     myDiagram.nodes.each(function(n) {
-        if (n.text !== "Start") n.visible = false;
+        if (n.text !== "Start") n.visible = true;
       });
     myDiagram.links.each(function(l) {
         l.visible = false;
