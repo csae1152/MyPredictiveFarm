@@ -16,9 +16,11 @@ A big part of our application will be computer aided diagnosis for your animals.
 
 It's easy as pie: 
 
-- Take an image of your animals retina
+- Take an image of your animals retina with your smart phone.
 - Upload it to your MyPredectiveFarm retinal image analysis application
 - Get the results in a few seconds
+- You will see if your animals are in a good health condition or what diseas you will have to expect.
+ 
 
 Try it out
 ==========
