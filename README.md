@@ -64,7 +64,20 @@ We will provide you easy to read predective analysis charts. (Based on d3.js)
 Overview - Technical layout of retinal image analysis
 =====================================================
 
-We will do it with Spark and Scala.
+Prediction Network
+
+An input vector sequence x = (x1, . . . , xT ) is passed through weighted connections to a stack of N recurrently connected hidden layers to compute first the hidden vector sequences h.
+
+And then the output vector sequence y = (y1, . . . , yT ). Each output vector yt is used to
+parameterise a predictive distribution Pr(xt+1|yt) over the possible next inputs
+xt+1. The first element x1 of every input sequence is always a null vector whose
+entries are all zero; the network therefore emits a prediction for x2, the first
+real input, with no prior information. The network is ‘deep’ in both space
+and time, in the sense that every piece of information passing either vertically
+or horizontally through the computation graph will be acted on by multiple
+successive weight matrices and nonlinearities.
+
+copyright by http://arxiv.org/pdf/1308.0850v5.pdf - Alex Graves
 
 Frontend architecture overview
 ==============================
