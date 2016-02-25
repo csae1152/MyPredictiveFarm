@@ -36,11 +36,11 @@ Technical Overview (Would be my dream come true :-) )
 
 - New Relic
 
--AppDynamics
+- AppDynamics
 
 - ZooKeeper
 
--LDAP
+- LDAP
 
 - Nagios
 
