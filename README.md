@@ -9,6 +9,80 @@ It will get possible to find the best solutions for your harvesting machines.
 
 In combination with sensors around your acre, weather forecast and predective analysis our platform will provide you with the information you need.
 
+Technical Overview (Would be my dream come true :-) )
+
+- Tomcat
+
+- MySQL
+
+- HAProxy
+
+- Nginx
+
+- Memcached
+
+- Apache
+
+- Elasticsearch
+
+- Redis
+
+- RabbitMQ
+
+- CentOS
+
+- Puppet
+
+- New Relic
+
+-AppDynamics
+
+- ZooKeeper
+
+-LDAP
+
+- Nagios
+
+- Graphite
+
+- Cacti
+
+- Apache FTP server
+
+- OpenTSDB
+
+- Google BigQuery
+
+- Google BigTable
+
+- Google analytics
+
+- MixPanel
+
+- Tableau
+
+- ReactJS/Backbone/Marionette/JQuery/npm/nighwatch
+
+- Rsync
+
+- PowerDNS
+
+- Mashery
+
+- SOA architecture based on REST apis.
+
+- Java used to power core file system code
+
+- Python used to power mostly client side code, migration scripts, internal scripts. Some python code still resides on server but most of it is migrated to Java as we had more server developers with java familiarity and scaling experience.
+
+- Native Android/iOS apps
+
+- Desktop and server sync client for various platforms
+
+-GCE
+
+- GCS/S3/Azure/….
+
 Retinal Image Analysis
 ======================
 
@@ -91,5 +165,7 @@ Frontend architecture overview
 - Pioneer
 
 and on top it's Backbone.js running.
+
+
  
 
