@@ -51,7 +51,7 @@
 
     myDiagram = $(go.Diagram, "mypredictivefarm_diagram",  // must name or refer to the DIV HTML element
                   {
-                    initialContentAlignment: go.Spot.Left,
+                    initialContentAlignment: go.Spot.Right,
                     allowSelect: false,  // the user cannot select any part
                     // create a TreeLayout for the decision tree
                     layout: $(go.TreeLayout)
@@ -65,7 +65,7 @@
       node.findLinksOutOf(portid).each(function(l) {
           if (l.visible) {
             // collapse whole subtree recursively
-            collapseTree(node, portid);
+            collapseTree(node, deviceId);
           } else {
             // only expands immediate children and their links
             l.visible = true;
@@ -115,7 +115,7 @@
           {
             font: "8pt sans-serif",
             wrap: go.TextBlock.WrapFit,
-            desiredSize: new go.Size(100, NaN),
+            desiredSize: new go.Size(10, NaN),
             alignment: go.Spot.Center,
             margin: 6
           },
@@ -143,7 +143,7 @@
                   click: buttonExpandCollapse,
                   toolTip: tooltipTemplate
                 },
-                new go.Binding("portId", "a"),
+                new go.Binding("farmId", "a"),
                 $(go.TextBlock,
                   new go.Binding("text", "aText"))
               ),  // end button A
