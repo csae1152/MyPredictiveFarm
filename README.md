@@ -9,7 +9,7 @@ It will get possible to find the best solutions for your harvesting machines.
 
 In combination with sensors around your acre, weather forecast and predective analysis our platform will provide you with the information you need.
 
-Technical Overview (Would be my dream come true :-) )
+Technical Overview (First draft)
 =====================================================
 
 - Tomcat
