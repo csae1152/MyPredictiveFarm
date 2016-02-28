@@ -80,7 +80,7 @@ Technical Overview (First draft)
 
 - Desktop and server sync client for various platforms
 
--GCE
+- GCE
 
 - GCS/S3/Azure/….
 
