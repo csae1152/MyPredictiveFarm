@@ -130,11 +130,11 @@ Upcoming Features
  - Bidding platform for agricultural devices
  - Decision dashboards for buying devices
  
-Predective analysis
+Predictive analysis
 ===================
 
-With our predective engine we will let you know what will happen in the future.
-We will provide you easy to read predective analysis charts. (Based on d3.js)
+With our predictive engine we will let you know what will happen in the future.
+We will provide you easy to read predictive analysis charts. (Based on d3.js)
 
 Overview - Technical layout of retinal image analysis
 =====================================================
