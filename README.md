@@ -22,6 +22,8 @@ Technical Overview (First draft)
 
 - Memcached
 
+- EHCache
+
 - Apache
 
 - Elasticsearch
