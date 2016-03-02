@@ -39,8 +39,8 @@ module.exports = function (grunt) {
       // Production compresses version
       production: {
         options: {
-          // Whether to compress or not          
-          compress: true
+          // Whether to compress or not - at the moment only for dev mode
+          compress: false
         },
         files: {
           // compilation.css  :  source.less
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
     // Uglify task info. Compress the js files.
     uglify: {
       options: {
-        mangle: true,
+        mangle: false,
         preserveComments: 'some'
       },
       my_target: {
