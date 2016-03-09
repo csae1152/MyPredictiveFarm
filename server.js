@@ -23,7 +23,7 @@ var ip = container.env['OPENSHIFT_VERTX_IP'] || 'localhost';
 var port = parseInt(container.env['OPENSHIFT_VERTX_PORT'] || 8080);
 
 vertx.createHttpServer().requestHandler(function(req) {
-  var file = req.path() === '/' ? 'index.html' : req.path();
+  var file = req.path() === '/' ? 'index_dashboard.html' : req.path();
   req.response.sendFile('webroot/' + file);
 }).listen(port, ip, function(err) {
     if (!err) {
