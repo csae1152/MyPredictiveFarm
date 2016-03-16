@@ -37,12 +37,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Add Auth0 css script for style issues -->
 
 <!-- Setting the right viewport -->
-<meta name="viewport" content="width=device-width, initial-scale=4.0, maximum-scale=4.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=8.0, maximum-scale=8.0, user-scalable=yes" />
 
 
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 1); }, true); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 1); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </script>
 <!----font-Awesome----->
 <link rel="stylesheet" href="web/fonts/css/font-awesome.min.css">
@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script>
 			$(function() {
 				var pull 		= $('#pull');
-					menu 		= $('nav li');
+					menu 		= $('nav right');
 					menuHeight	= menu.height();
 				$(pull).on('click', function(e) {
 					e.preventDefault();
