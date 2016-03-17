@@ -3,7 +3,7 @@ Overview - What can we do for you...
 
 With our platform you will be able to communicate with agricultural workers around the world helping you getting better in what you do.
 
-Our solution will highly be connected with all your farm devices, collect all the produced information and will provide strategies and plans for the future.
+Our solution is connected with all your farm devices, collecting all the produced information and will provide you strategies and plans for the future.
 
 It will get possible to find the best solutions for your harvesting machines.
 
@@ -84,7 +84,7 @@ Technical Overview (First draft)
 
 - GCE
 
-- GCS/S3/Azure/….
+- GCS/S3/Azure
 
 Retinal Image Analysis
 ======================
