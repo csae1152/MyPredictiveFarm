@@ -54,8 +54,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- start-top-nav-script -->
 		<script>
 			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav right');
+				var pull 		= $('#push');
+					menu 		= $('nav left');
 					menuHeight	= menu.height();
 				$(pull).on('click', function(e) {
 					e.preventDefault();
@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 				$(window).resize(function(){
 	        		var w = $(window).width();
-	        		if(w > 80 && menu.is(':hidden')) {
+	        		if(w > 40 && menu.is(':hidden')) {
 	        			menu.removeAttr('closed');
 	        		}
 	    		});
@@ -112,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <a ng-click="login()" class="btn btn-primary btn-lg btn-login btn-block">Predective Analytics for your farm - Have a look</a>
               </div>
               <!-- may cause the problems with text align left -->
-              <div class="logged-in-box auth0-box" style="display: non-blocked;">
+              <div class="logged-in-box auth0-box" style="display: blocked;">
                 <h3>Welcome <span class="nickname"></span></h3>
                 <a class="slide-btn" href="index_dashboard.html">First draft - Have a look ...</a>
                  </div>
