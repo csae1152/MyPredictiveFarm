@@ -113,11 +113,11 @@
           { fill: "whitesmoke", stroke: "lightgray" }),
         $(go.TextBlock,
           {
-            font: "8pt sans-serif",
+            font: "4pt sans-serif",
             wrap: go.TextBlock.WrapFit,
             desiredSize: new go.Size(10, NaN),
             alignment: go.Spot.Center,
-            margin: 6
+            margin: 8
           },
           new go.Binding("text", "", tooltipTextConverter))
       );
@@ -132,7 +132,7 @@
         // define a horizontal Panel to place the node's text alongside the buttons
         $(go.Panel, "Horizontal",
           $(go.TextBlock,
-            { font: "10pt sans-serif", margin: 8 },
+            { font: "4pt sans-serif", margin: 8 },
             new go.Binding("text", "key")),
           // define a vertical panel to place the node's two buttons one above the other
           $(go.Panel, "Vertical",
