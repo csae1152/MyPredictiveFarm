@@ -27,6 +27,7 @@
     TempCtor.prototype = parentCtor.prototype;
     childCtor.superClass_ = parentCtor.prototype;
     childCtor.prototype = new TempCtor();
+    mypredictiveFarm = new FarmIdGenerator();
     childCtor.prototype.constructor = childCtor;
 
     /**
