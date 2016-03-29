@@ -14,9 +14,10 @@
    * @param {number} y1 Vertical coordinate of P1.
    * @return {number} The euclidean distance.
    */
-  tracking.Math.distance = function(x0, y0, x1, y1) {
+  tracking.Math.distance = function(x0, y0, z0, x1, y1, z1) {
     var dx = x1 - x0;
     var dy = y1 - y0;
+    var dz = z1 - z0;
 
     return Math.sqrt(dx * dx + dy * dy);
   };
