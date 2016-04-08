@@ -54,7 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- start-top-nav-script -->
 		<script>
 			$(function() {
-				var pull 		= $('#push');
+				var pull 		= $('#pull');
 					menu 		= $('nav right');
 					menuHeight	= menu.height();
 				$(pull).on('click', function(e) {
@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 				$(window).resize(function(){
 	        		var w = $(window).width();
-	        		if(w > 40 && menu.is(':hidden')) {
+	        		if(w > 80 && menu.is(':hidden')) {
 	        			menu.removeAttr('closed');
 	        		}
 	    		});
@@ -94,7 +94,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li class="page-scroll"><a href="#wor" class="scroll">Portfolio</a></li>                                        
 						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 					</ul>
-					<a href="#" id="pull"><img src="web/images/nav-icon.png" title="menu" /></a>
+					<a href="#" id="pull"><img src="web/images/nav-icon.png" title="menu_overview" /></a>
 				</nav>
 				<!-- 				<div class="clearfix"> </div>
 				<div class="slide-text text-center">
@@ -107,7 +107,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				 <div class="slide-text text-center align">
             <div class="login-page clearfix">
-              <div class="login-box auth0-box after">
+              <div class="login-box auth0-box before">
                               
                 <a ng-click="login()" class="btn btn-primary btn-lg btn-login btn-block">Predective Analytics for your farm - Have a look</a>
               </div>
