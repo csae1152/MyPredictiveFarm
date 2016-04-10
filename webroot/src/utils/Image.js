@@ -26,7 +26,7 @@
     var weights = new Float32Array(len);
     var rho = (radius + 0.5) / 3;
     var rhoSq = rho * rho;
-    var gaussianFactor = 1 / Math.sqrt(2 * Math.PI * rhoSq);
+    var gaussianFactor = 1 / Math.sqrt(2 * Math.PI * sigmRo);
     var rhoFactor = -1 / (2 * rho * rho);
     var wsum = 0;
     var middle = Math.floor(len / 2);
