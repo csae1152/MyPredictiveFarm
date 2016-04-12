@@ -8,10 +8,10 @@
   "description": "Admin dashboard and control panel template",
   "main": [
     "index.html",
-    "dist/css/mypredectivefarm.less",
     "dist/js/mypredectivefarm.js",
     "build/less/isoagrobus.less",
-    "build/less/mypredectivefarm.less"
+    "build/less/mypredectivefarm.less",
+    "build/less/index_dashboard.html"
   ],
   "keywords": [
     "css",
