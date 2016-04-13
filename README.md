@@ -78,8 +78,6 @@ Technical Overview (First draft)
 
 - Java used to power core file system code
 
-- Python used to power mostly client side code, migration scripts, internal scripts. Some python code still resides on server but most of it is migrated to Java as we had more server developers with java familiarity and scaling experience.
-
 - Native Android/iOS apps
 
 - Desktop and server sync client for various platforms
