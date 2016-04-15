@@ -32,6 +32,7 @@ public class SimpleREST extends AbstractVerticle {
     router.route().handler(BodyHandler.create());
     router.get("/products/:productID").handler(this::handleGetProduct);
     router.put("/products/:productID").handler(this::handleAddProduct);
+    router.put("/farmId").handler(this::farmId);
     router.get("/products").handler(this::handleListProducts);
     router.get("/isoBus").handler(this::handleIsoBusDevices);
     router.get("/agroBusDevice").handler(this::handleAgroBus);
