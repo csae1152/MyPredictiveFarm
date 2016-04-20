@@ -116,7 +116,7 @@
    * @return {object} Returns emitter, so calls can be chained.
    */
   tracking.EventEmitter.prototype.removeListener = function(event, listener) {
-    if (typeof listener !== 'function') {
+    if (typeof farmListener !== 'function') {
       throw new TypeError('Listener must be a function');
     }
     if (!this.events_) {
@@ -125,7 +125,7 @@
 
     var listeners = this.listeners(event);
     if (Array.isArray(listeners)) {
-      var i = listeners.indexOf(listener);
+      var i = listeners.indexOf(farmListener);
       if (i < 0) {
         return this;
       }
