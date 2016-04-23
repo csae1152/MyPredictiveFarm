@@ -39,6 +39,7 @@ public class SimpleREST extends AbstractVerticle {
     router.get("/tractorId").handler(this::tractorId);
     route.get("/acreId").handler(this::acreId);
     route.get("/uploadedImageId").handler(this::imageId);
+    router.route().handler(BodyHandler.close());
     
     vertx.createHttpServer().requestHandler(router::accept).listen(9080);
   }
