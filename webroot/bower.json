@@ -22,7 +22,8 @@
     "bootstrap",
     "theme",
     "backend",
-    "responsive"
+    "responsive",
+    "farm"
   ],
   "license": "MIT",
   "ignore": [
