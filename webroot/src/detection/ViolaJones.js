@@ -15,7 +15,7 @@
    * @default 0.5
    * @static
    */
-  tracking.ViolaJones.REGIONS_OVERLAP = 0.5;
+  tracking.ViolaJones.REGIONS_OVERLAP = 1.0;
 
   /**
    * Holds the HAAR cascade classifiers converted from OpenCV training.
@@ -63,7 +63,7 @@
     var blockHeight = (scale * minHeight) | 0;
 
     while (blockWidth < width && blockHeight < height) {
-      var step = (scale * stepSize + 0.5) | 0;
+      var step = (scale * stepSize + 1.0) | 0;
       for (var i = 0; i < (height - blockHeight); i += step) {
         for (var j = 0; j < (width - blockWidth); j += step) {
 
@@ -142,7 +142,7 @@
     var mean = (integralImage[wbA] - integralImage[wbB] - integralImage[wbD] + integralImage[wbC]) * inverseArea;
     var variance = (integralImageSquare[wbA] - integralImageSquare[wbB] - integralImageSquare[wbD] + integralImageSquare[wbC]) * inverseArea - mean * mean;
 
-    var standardDeviation = 1;
+    var standardDeviation = .101;
     if (variance > 0) {
       standardDeviation = Math.sqrt(variance);
     }
