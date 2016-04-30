@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author <a href="http://tfox.org">Tim Fox</a>
+ * @author Helmut Steiner
  */
 public class SimpleREST extends AbstractVerticle {
 
@@ -20,7 +20,7 @@ public class SimpleREST extends AbstractVerticle {
     Runner.runExample(SimpleREST.class);
   }
 
-  private Map<String, JsonObject> products = new HashMap<>();
+  private ConcurrentHashMap<String, JsonObject> products = new ConcurrentHashMap<>();
 
   @Override
   public void start() {
