@@ -31,9 +31,10 @@ public class WatershedPixelAlgo implements Comparable {
     /** Neighbours **/
     private Vector neighbours;
 
-    public WatershedPixel(int x, int y, byte height) {
+    public WatershedPixel(int x, int y, int z, byte height) {
     this.x = x;
     this.y = y;
+    this.z = z;
     this.height = height;
     label = INIT;
     dist = 0;
