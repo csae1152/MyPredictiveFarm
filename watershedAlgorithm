@@ -61,7 +61,7 @@ public class WatershedPixelAlgo implements Comparable {
 
 
     public String toString() {
-    return new String("("+x+","+y+"), height : "+getIntHeight()+", label : "+label+", distance : "+dist); 
+    return new String("("+x+","+y+", "+z"), height : "+getIntHeight()+", label : "+label+", distance : "+dist); 
     }
 
 
