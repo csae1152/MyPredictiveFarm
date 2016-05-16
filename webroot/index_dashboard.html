@@ -83,10 +83,10 @@
     // recursive function for collapsing complete subtree
     function collapseTree(node, portid) {
       node.findLinksOutOf(portid).each(function(l) {
-          l.visible = false;
+          l.visible = true;
           var n = l.getOtherNode(node);
           if (n !== null) {
-            n.visible = false;
+            n.visible = true;
             collapseTree(n, null);  // null means all links, not just for a particular portId
           }
         });
@@ -117,7 +117,7 @@
             wrap: go.TextBlock.WrapFit,
             desiredSize: new go.Size(10, NaN),
             alignment: go.Spot.Center,
-            margin: 8
+            margin: 4
           },
           new go.Binding("text", "", tooltipTextConverter))
       );
