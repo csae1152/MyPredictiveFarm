@@ -24,7 +24,8 @@
     "theme",
     "backend",
     "responsive",
-    "farm"
+    "farm",
+    "tractor"
   ],
   "license": "MIT",
   "ignore": [
