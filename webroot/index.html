@@ -43,7 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=4">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 8); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 8); }, true); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </script>
 <!----font-Awesome----->
 <link rel="stylesheet" href="web/fonts/css/font-awesome.min.css">
@@ -55,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- start-top-nav-script -->
 		<script>
 			$(function() {
-				var pull 		= $('#push');
+				var pull 		= $('#pull');
 					menu 		= $('nav right');
 					menuHeight	= menu.height();
 				$(pull).on('click', function(e) {
@@ -114,7 +114,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </div>
               <!-- may cause the problems with text align left -->
               <div class="logged-in-box auth0-box" style="display: blocked;">
-                <h3>Welcome <span class="nickname"></span></h3>
+                <h1>Welcome <span class="nickname"></span></h1>
                 <a class="slide-btn" href="index_dashboard.html">First draft - Have a look ...</a>
                  </div>
             </div>
