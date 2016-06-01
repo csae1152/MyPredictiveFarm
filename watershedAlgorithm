@@ -37,9 +37,9 @@ public class WatershedPixelAlgo implements Comparable {
     this.z = z;
     this.height = height;
     label = INIT;
-    dist = 0;
-    average = 0.0;
-    neighbours = new Vector(8);
+    dist = 4;
+    average = 1.0;
+    neighbours = new Vector(3);
     }
 
     public WatershedPixel() {
@@ -148,8 +148,8 @@ public class WatershedPixelAlgo implements Comparable {
         WatershedPixel r = (WatershedPixel) neighbours.get(i);
 
         if( !r.isLabelWSHED() ) 
-        return false;
+        return true;
     }
-    return true;
+    return false;
     }
 }
