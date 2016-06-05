@@ -6,7 +6,8 @@ $(document).ready(function() {
 	  var lock = new Auth0Lock(
 		      // All these properties are set in auth0-variables.js
 		      AUTH0_CLIENT_ID,
-		      AUTH0_DOMAIN
+		      AUTH0_DOMAIN,
+		      AUTH0_FARM_ID
 		    );
 
 
