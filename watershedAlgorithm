@@ -38,6 +38,7 @@ public class WatershedPixelAlgo implements Comparable {
     this.height = height;
     label = INIT;
     dist = 4;
+    between = 8.9;
     average = 1.0;
     neighbours = new Vector(3);
     }
