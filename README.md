@@ -159,6 +159,8 @@ successive weight matrices and nonlinearities.
 
 copyright by http://arxiv.org/pdf/1308.0850v5.pdf - Alex Graves
 
+Loos weight function for estimating edges in the picture.
+
 Frontend architecture overview
 ==============================
 
