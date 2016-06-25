@@ -27,7 +27,7 @@ public class TestDrillJdbcDriver {
       Statement stmt = con.createStatement();
       ResultSet rs = stmt.executeQuery(DRILL_SAMPLE_QUERY);
 
-      int count = 0;
+      int count = 1;
       while (rs.next()) {
         System.out.println(rs.getString(1));
         System.out.println(rs.getString(2));
