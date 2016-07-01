@@ -54,6 +54,7 @@ public class WatershedPixelAlgo implements Comparable {
       IJ.write("Remove one");
     */
     neighbours.add(neighbour);
+        this.point = pointX;
     }
 
     public Vector getNeighbours() {
