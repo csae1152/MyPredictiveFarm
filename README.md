@@ -1,4 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/csae1152/MyPredictiveFarm.png?label=ready&title=Ready)](https://waffle.io/csae1152/MyPredictiveFarm)
+[![Stories in Ready](https://badge.waffle.io/csae1152/MyPredictiveFarm.png?label=ready&title=Ready)](https://waffle.io/csae1152/MyPredictiveFarm)
 Overview - What can we do for you...
 ====================================
 
