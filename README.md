@@ -166,6 +166,8 @@ Loos weight function for estimating edges in the picture.
 Frontend architecture overview
 ==============================
 
+We think react and redux/flux is a good thing. So we plan to use it.
+
 - Browserify
 - Babel(ES6)
 - Handlebars
