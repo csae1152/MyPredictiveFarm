@@ -88,6 +88,12 @@ Technical Overview (First draft)
 
 - GCS/S3/Azure
 
+Overview data pipeline
+======================
+
+App - Kafka Cluster (raw data) - Akka (Spark Streaming) - Cassandra
+
+
 Retinal Image Analysis
 ======================
 
