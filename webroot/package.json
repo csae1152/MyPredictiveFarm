@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/almasaeed2010/AdminLTE.git"
+    "url": "git://github.com/csae1152/MyPredictiveFarm.git"
   },
   "devDependencies": {
     "R2": "^1.4.3",
