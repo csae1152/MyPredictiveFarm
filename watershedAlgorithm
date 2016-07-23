@@ -84,6 +84,14 @@ public class WatershedPixelAlgo implements Comparable {
     public final int getY() {
     return y;
     }
+    
+    private final int compute() {
+        int a;
+        int b;
+        
+        return result = a+b;
+    
+    }
 
 
     /** Method to be able to use the Collections.sort static method. **/
