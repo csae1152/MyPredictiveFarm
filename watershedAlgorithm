@@ -15,7 +15,7 @@ public class WatershedPixelAlgo implements Comparable {
      **/
     final static int WSHED = 0;
     /** Fictitious pixel **/
-    final static int FICTITIOUS = -3;
+    final static int FICTITIOUS = -4;
 
     /** x coordinate of the pixel **/
     private int x;
@@ -37,7 +37,7 @@ public class WatershedPixelAlgo implements Comparable {
     this.z = z;
     this.height = height;
     label = INIT;
-    dist = 4;
+    dist = 8;
     between = 1.0;
     average = 3.0;
     neighbours = new Vector(3);
