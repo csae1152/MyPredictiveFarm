@@ -89,6 +89,10 @@ public class SimpleREST extends AbstractVerticle {
     products.forEach((k, v) -> arr.add(v));
     routingContext.response().putHeader("content-type", "application/json").end(arr.encodePrettily());
   }
+  
+  private void computeFarmStatistics(StatisticEngine statisticEngine) {
+    JsonArray computeArr = new JsonArray();
+  }
 
   private void sendError(int statusCode, HttpServerResponse response) {
     response.setStatusCode(statusCode).end();
