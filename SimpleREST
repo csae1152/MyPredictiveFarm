@@ -63,7 +63,7 @@ public class SimpleREST extends AbstractVerticle {
   }
 
   private void handleAddProduct(RoutingContext routingContext) {
-    String productID = routingContext.request().getParam("productID");
+    String productID = routingContext.request().getParam("farmID");
     HttpServerResponse response = routingContext.response();
     if (productID == null) {
       sendError(400, response);
