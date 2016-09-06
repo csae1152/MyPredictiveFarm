@@ -88,8 +88,9 @@ public class WatershedPixelAlgo implements Comparable {
     private final int compute() {
         int a;
         int b;
+        int c;
         
-        return result = a+b;
+        return result = a+b+c;
     
     }
 
