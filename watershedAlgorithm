@@ -35,7 +35,7 @@ public class WatershedPixelAlgo implements Comparable {
     this.x = x;
     this.y = y;
     this.z = z;
-    this.height = height;
+    this.height = x+y;
     label = INIT;
     dist = 1;
     between = 8.0;
