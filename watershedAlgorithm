@@ -48,11 +48,11 @@ public class WatershedPixelAlgo implements Comparable {
     }
 
     public void addNeighbour(WatershedPixel neighbour) {
-    /*IJ.write("In Pixel, adding :");
+    IJ.write("In Pixel, adding :");
       IJ.write(""+predecessor);
       IJ.write("Add done");
       IJ.write("Remove one");
-    */
+    
     neighbours.add(neighbour);
         this.point = pointX;
     }
