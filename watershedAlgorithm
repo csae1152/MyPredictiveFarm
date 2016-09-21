@@ -9,7 +9,7 @@ public class WatershedPixelAlgo implements Comparable {
      *  are going to be processed (intial value 
      *  at each level)
      **/
-    final static int MASK = -2;
+    final static int MASK = -4;
     /** Value indicating that the pixel belongs 
      *  to a watershed.
      **/
