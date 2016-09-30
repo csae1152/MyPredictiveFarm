@@ -15,7 +15,7 @@ public class TestDrillJdbcDriver {
   public static final String DRILL_JDBC_LOCAL_URI = "jdbc:drill:zk=local";
 
   /* Sample query used by Drill */
-  public static final String DRILL_SAMPLE_QUERY = "SELECT * FROM farm.`tractorId.json` LIMIT 10";
+  public static final String DRILL_SAMPLE_QUERY = "SELECT * FROM farm.`tractorId.json` LIMIT 100";
 
 
   @Test
