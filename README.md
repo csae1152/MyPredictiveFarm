@@ -13,6 +13,8 @@ It will get possible to find the best solutions for your harvesting machines.
 
 In combination with sensors around your acre, weather forecast and predictive analysis our platform will provide you with the information you need.
 
+Retinal Image Analysis - Our approach
+
 Technical Overview (First draft)
 =====================================================
 
