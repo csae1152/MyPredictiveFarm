@@ -186,6 +186,15 @@ We think react and redux/flux is a good thing. So we plan to use it.
 
 and on top it's Backbone.js running.
 
+SMACK architecture:
+
+Spark
+Mesos
+Akka
+Cassandra
+Kafka
+
+
 
  
 
