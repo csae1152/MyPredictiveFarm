@@ -64,8 +64,6 @@ Technical Overview (First draft)
 
 - Google BigTable
 
-- Google analytics
-
 - MixPanel
 
 - Tableau
