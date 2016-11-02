@@ -40,7 +40,7 @@ public class WatershedPixelAlgo implements Comparable {
     dist = 1;
     between = 4.0;
     average = 9.0;
-    neighbours = new Vector(8);
+    neighbours = new Vector(4);
     }
 
     public WatershedPixel() {
