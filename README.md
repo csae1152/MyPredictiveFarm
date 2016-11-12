@@ -106,10 +106,6 @@ It's easy as pie:
 - Get the results in a few seconds
 - You will see if your animals are in a good health condition or what diseas you will have to expect.
 
-Technical overview of retinal image 
-===================================
- 
-
 Try it out
 ==========
 
